@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Lato:wght@400;700&display=swap'); /* Lora para títulos, Lato para corpo */
+
+* {
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
+}
+
+:root {
+    --primary-color: #8ab4f8; /* Cor primária (azul claro) */
+    --primary-color: #003366; /* Azul corporativo escuro */
+    --secondary-color: #343a40; /* Texto principal (cinza escuro) */
+    --tertiary-color: #6c757d; /* Cinza para bordas/placeholders */
+    --bg-color: #f8f9fa; /* Fundo (cinza muito claro) */
+    --card-bg-color:#f7f7f7; /* Fundo do card (branco) */
+}
+
+body {
+    margin: 0; /* Remove a margem padrão do body */
+    background: var(--bg-color); /* Define a cor de fundo usando uma variável */
+    color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
+    font-family: "Lato", sans-serif; /* Define a família da fonte principal */
+    display: flex; /* Habilita o layout flexbox para o body */
+    flex-direction: column; /* Organiza os filhos (header, main, footer) em coluna */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura total da tela */
+}
+
+header {
+    padding: 2rem 1rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
+    display: flex; /* Habilita o layout flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
+    top: 0; /* Posição do topo quando sticky */
+    background: var(--card-bg-color); /* Cor de fundo do cabeçalho (branco) */
+    z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */
+    border-bottom: 1px solid #dee2e6; /* Adiciona uma borda inferior sutil */
+    gap: 1rem; /* Espaçamento entre os elementos flex */
+}
+
+header h1 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    margin: 0; /* Remove a margem padrão */
+    font-weight: 500; /* Peso da fonte (médio) */
+    font-family: "Lora", serif; /* Fonte com serifa para o título principal */
+    white-space: nowrap; /* Impede a quebra de linha do texto */
+}
+
+div input {
+    padding: 0.375rem 0.75rem; /* Espaçamento interno */
+    border-radius: 0.25rem; /* Bordas levemente arredondadas, mais profissional */
+    border: 1px solid var(--tertiary-color); /* Define a borda */
+    background: var(--card-bg-color); /* Cor de fundo */
+    font-family: inherit; /* Herda a família da fonte do elemento pai */
+    font-size: 1.1rem; /* Tamanho da fonte ajustado */
+    transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades */
+    width: 30rem; /* Largura do input */
+    color: var(--secondary-color); /* Cor do texto digitado */
+    margin-right: .5rem; /* Margem à direita */
+}
+
+div input::placeholder {
+    font-size: 1rem; /* Tamanho da fonte do placeholder */
+    font-weight: 300; /* Peso da fonte do placeholder */
+    color: var(--tertiary-color); /* Cor do texto do placeholder */
+}
+
+div input:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    border-color: var(--primary-color); /* Muda a cor da borda ao focar */
+    box-shadow: 0 0 0 0.1rem rgba(0, 51, 102, 0.25); /* Adiciona uma sombra de caixa para indicar foco */
+}
+
+#botao-busca {
+    padding: 1rem 2rem; /* Espaçamento interno */
+    border-radius: 0.25rem; /* Bordas levemente arredondadas */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+    font-family: inherit; /* Herda a família da fonte */
+    font-weight: 500; /* Peso da fonte */
+    font-size: 1rem; /* Tamanho da fonte */
+    white-space: nowrap; /* Impede a quebra de linha do texto */
+    transition: background-color 0.2s ease; /* Transição suave para cor de fundo */
+    background-color: var(--primary-color); /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    border: 1px solid var(--primary-color); /* Adiciona uma borda */
+}
+
+#botao-busca:hover {
+    background-color: #002244; /* Variação mais escura do azul no hover */
+    border-color: #002244;
+    color: #ffffff; /* Muda a cor do texto ao passar o mouse */
+    box-shadow: none; /* Adiciona uma sombra de caixa */
+}
+
+#botao-busca:active {
+    transform: scale(0.98); /* Efeito de clique (diminui o tamanho) */
+}
+
+main {
+    flex-grow: 1; /* Faz com que o main ocupe todo o espaço vertical disponível */
+    max-width: 80rem; /* Largura máxima do conteúdo principal */
+    width: 100%; /* Garante que o main ocupe a largura disponível */
+    margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
+}
+
+article {
+    background: var(--card-bg-color); /* Fundo branco para os cards */
+    border-radius: 0.25rem; /* Bordas arredondadas sutis */
+    padding: 1.5rem; /* Espaçamento interno */
+    margin-bottom: 1.25rem; /* Margem inferior */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra de caixa sutil */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transição suave */
+    border: 1px solid #e9ecef; /* Borda sutil */
+}
+
+article:hover {
+    transform: translateY(-3px); /* Eleva o card levemente no hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08); /* Aumenta a sombra no hover */
+    cursor: default; /* Muda o cursor para uma mão */
+}
+
+article h2 {
+    margin-top: 0; /* Remove a margem superior */
+    font-weight: 600; /* Peso da fonte */
+    font-size: 1.6rem; /* Tamanho da fonte */
+    font-family: "Lora", serif; /* Fonte com serifa para os títulos dos cards */
+    border-bottom: 1px solid #eee; /* Linha separadora para o título */
+    padding-bottom: 0; /* Sem espaçamento interno inferior */
+    margin-bottom: 0.25rem; /* Margem inferior */
+    color: var(--primary-color); /* Cor do texto */
+}
+
+article p {
+    margin: 0.5rem 0; /* Margem superior e inferior */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-bottom: 0.5rem; /* Margem inferior */
+    color: var(--secondary-color); /* Cor do texto */
+}
+
+article p strong {
+    color: var(--primary-color); /* Cor do texto em negrito */
+    font-weight: 500; /* Peso da fonte */
+}
+
+article a {
+    color: var(--primary-color); /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: 200; /* Peso da fonte */
+}
+
+article ul {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem; /* Adiciona um recuo à esquerda para a lista */
+}
+
+article li {
+    margin-bottom: 0.25rem; /* Espaçamento entre os itens da lista */
+    line-height: 1.5;
+}
+
+article a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.footer {
+    /* A propriedade flex no body já posiciona o rodapé corretamente */
+    margin-top: auto; /* Empurra o rodapé para o final do contêiner flex (body) */
+    width: 100%; /* Largura total */
+    color: var(--tertiary-color); /* Cor do texto */
+    background-color: #e9ecef; /* Cor de fundo */
+    padding: 15px 20px; /* Espaçamento interno */
+    border-top: 1px solid #3c4043; /* Borda superior */
+    font-size: 0.8rem; /* Tamanho da fonte */
+}
+
+.footer-location {
+    color: #9aa0a6; /* Cor do texto */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+.footer-links {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Habilita o layout flexbox */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 15px; /* Espaçamento entre os links */
+}
+
+.footer-links a {
+    color: var(--tertiary-color); /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.2s; /* Transição suave para a cor */
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color); /* Muda a cor do link ao passar o mouse */
+}
+
+.video-link-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #e9ecef;
+    color: var(--secondary-color);
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.video-link-btn:hover {
+    background-color: #d6d8db;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header { /* Estilos para telas com largura máxima de 768px */
+        flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
+        padding: 1rem; /* Reduz o espaçamento interno */
+    }
+
+    header h1 { /* Estilos para o h1 no cabeçalho em telas menores */
+        text-align: center; /* Centraliza o texto */
+        margin-bottom: 1rem; /* Adiciona margem inferior */
+    }
+
+    div input { /* Estilos para o input em telas menores */
+        width: 90vw; /* Largura baseada na largura da viewport */
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+
+    main { /* Estilos para o main em telas menores */
+        padding: 1rem; /* Adiciona espaçamento lateral */
+    }
+
+    article:hover { /* Estilos para o article em telas menores */
+        transform: none; /* Remove o efeito de escala ao passar o mouse */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 { /* Estilos para o h1 em telas com largura máxima de 480px */
+        font-size: 1rem; /* Reduz ainda mais o tamanho da fonte */
+        max-width: 70%; /* Define uma largura máxima */
+        word-wrap: break-word; /* Permite a quebra de palavras longas */
+    }
+
+    div input, /* Estilos para o input e seu placeholder em telas muito pequenas */
+    div input::placeholder {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+
+    article h2 { /* Estilos para o h2 do article em telas muito pequenas */
+        font-size: 1.3rem; /* Reduz o tamanho da fonte */
+    }
+
+    div { /* Estilos para a div do cabeçalho em telas muito pequenas */
+        display: flex; /* Habilita flexbox */
+        align-items: center; /* Alinha itens ao centro */
+        justify-content: center; /* Centraliza itens */
+        flex-direction: column; /* Organiza em coluna */
+        gap: 0.5rem; /* Espaçamento entre os itens */
+    }
+
+    .footer { /* Estilos para o rodapé em telas muito pequenas */
+        display: none; /* Oculta o rodapé */
+    }
+
+    button { /* Estilos para o botão em telas muito pequenas */
+        margin-top: 1rem; /* Adiciona margem no topo */
+    }
+}

@@ -1,0 +1,224 @@
+[
+  {
+    "nome": "Diagrama de Ishikawa (Espinha de Peixe)",
+    "descricao": "Ferramenta gráfica que organiza as possíveis causas de um problema (efeito) em categorias, facilitando a identificação de sua causa raiz. Assemelha-se a uma espinha de peixe.",
+    "aplicacao": "Utilizado em sessões de brainstorming para analisar a causa raiz de defeitos, falhas ou variações em um processo, produto ou serviço.",
+    "autor": "Kaoru Ishikawa",
+    "link_video": "https://www.youtube.com/watch?v=KJkGBJBh5LI&t=215s",
+    "vantagens": [
+      "Visualização clara das relações de causa e efeito.",
+      "Estimula a colaboração e o brainstorming em equipe.",
+      "Ajuda a organizar ideias complexas de forma estruturada."
+    ],
+    "desvantagens": [
+      "Pode se tornar visualmente complexo se houver muitas causas.",
+      "Não prioriza as causas identificadas, necessitando de outras ferramentas.",
+      "A qualidade da análise depende da experiência da equipe."
+    ]
+  },
+  {
+    "nome": "Diagrama de Pareto (80/20)",
+    "descricao": "Gráfico de barras que ordena as causas de um problema da mais para a menos frequente, combinado com um gráfico de linha que mostra a porcentagem acumulada. Baseia-se no princípio de que 80% dos problemas são causados por 20% das causas.",
+    "aplicacao": "Priorizar problemas ou causas, permitindo que a equipe foque seus esforços nos fatores mais significativos para obter o maior impacto.",
+    "autor": "Vilfredo Pareto (princípio), Joseph Juran (aplicação na qualidade)",
+    "link_video": "https://www.youtube.com/watch?v=6ftRTuH2pCg",
+    "vantagens": [
+      "Ajuda a focar nos problemas mais importantes.",
+      "Fácil de entender e comunicar visualmente.",
+      "Baseado em dados, o que facilita a tomada de decisão."
+    ],
+    "desvantagens": [
+      "Não identifica a causa raiz dos problemas, apenas sua frequência.",
+      "Pode simplificar demais situações complexas.",
+      "Dados históricos podem não prever problemas futuros."
+    ]
+  },
+  {
+    "nome": "Fluxograma",
+    "descricao": "Representação gráfica de um processo ou fluxo de trabalho, mostrando as etapas como caixas de vários tipos e a ordem delas conectando-as com setas.",
+    "aplicacao": "Mapear, documentar, analisar e melhorar processos. É fundamental para entender como um processo funciona e identificar gargalos ou ineficiências.",
+    "autor": "Frank e Lillian Gilbreth (primeiros usos)",
+    "link_video": "https://www.youtube.com/watch?v=J3gZH5w6eBo",
+    "vantagens": [
+      "Facilita a visualização e compreensão de processos complexos.",
+      "Ajuda a padronizar fluxos de trabalho.",
+      "Identifica pontos de decisão, gargalos e etapas desnecessárias."
+    ],
+    "desvantagens": [
+      "Pode se tornar muito extenso e complexo para processos grandes.",
+      "A atualização pode ser trabalhosa se o processo mudar com frequência.",
+      "Não mostra causas de variação, apenas o fluxo."
+    ]
+  },
+  {
+    "nome": "Folha de Verificação",
+    "descricao": "Um formulário estruturado e simples para coletar e analisar dados em tempo real. É uma das formas mais básicas de registrar informações de forma padronizada.",
+    "aplicacao": "Coletar dados sobre a frequência de defeitos, ocorrências de eventos, ou para confirmar se etapas de um processo foram concluídas. Muito usada em inspeções e auditorias.",
+    "autor": "Associado às práticas de Controle de Qualidade Total (TQC)",
+    "link_video": "https://www.youtube.com/watch?v=ANELhnpR108",
+    "vantagens": [
+      "Simples de criar e usar.",
+      "Fornece dados organizados e fáceis de tabular.",
+      "Minimiza erros na coleta de dados."
+    ],
+    "desvantagens": [
+      "Limitada a dados que podem ser contados ou verificados.",
+      "Não fornece insights profundos sobre as causas.",
+      "A análise depende da correta definição do que será coletado."
+    ]
+  },
+  {
+    "nome": "Histograma",
+    "descricao": "Gráfico de barras que representa a distribuição de frequência de um conjunto de dados contínuos. Mostra como os dados estão distribuídos e onde se concentram.",
+    "aplicacao": "Analisar a variabilidade de um processo, verificar se ele atende às especificações e entender a distribuição de uma característica de qualidade (ex: peso, dimensão, tempo).",
+    "autor": "Karl Pearson",
+    "link_video": "https://www.youtube.com/watch?v=q6al_FKb__Q",
+    "vantagens": [
+      "Visualiza rapidamente a distribuição dos dados (simetria, picos, dispersão).",
+      "Ajuda a identificar a frequência de ocorrências em determinadas faixas.",
+      "Permite comparar o desempenho do processo com os limites de especificação."
+    ],
+    "desvantagens": [
+      "Requer uma quantidade razoável de dados para ser significativo.",
+      "A aparência do gráfico pode mudar dependendo do número de barras (classes) escolhido.",
+      "Não mostra a evolução dos dados ao longo do tempo."
+    ]
+  },
+  {
+    "nome": "Cartas de Controle",
+    "descricao": "Gráfico utilizado para monitorar a estabilidade de um processo ao longo do tempo. Possui uma linha central (média) e limites de controle superior e inferior.",
+    "aplicacao": "Diferenciar causas comuns de variação (inerentes ao processo) de causas especiais (eventos específicos), permitindo agir apenas quando necessário e evitar ajustes excessivos.",
+    "autor": "Walter A. Shewhart",
+    "link_video": "https://www.youtube.com/watch?v=it6jURXW48M",
+    "vantagens": [
+      "Monitora a estabilidade e a previsibilidade do processo.",
+      "Indica quando uma investigação de causa especial é necessária.",
+      "Ajuda a prever o desempenho futuro do processo."
+    ],
+    "desvantagens": [
+      "Requer conhecimento estatístico para ser implementada e interpretada corretamente.",
+      "Pode ser complexa para escolher o tipo de carta adequado para cada situação.",
+      "Não resolve os problemas, apenas sinaliza que eles existem."
+    ]
+  },
+  {
+    "nome": "Diagrama de Dispersão",
+    "descricao": "Um gráfico que utiliza coordenadas cartesianas para exibir valores de duas variáveis de um conjunto de dados. Os dados são exibidos como uma coleção de pontos, cada um tendo o valor de uma variável determinando a posição no eixo horizontal e o valor da outra variável determinando a posição no eixo vertical.",
+    "aplicacao": "Verificar a relação entre duas variáveis, como por exemplo, se a temperatura de um processo afeta a qualidade do produto final. Ajuda a identificar se existe uma correlação (positiva, negativa ou nula) entre elas.",
+    "autor": "Francis Galton (contribuições significativas)",
+    "link_video": "https://www.youtube.com/watch?v=v2b7xrE4rFc",
+    "vantagens": [
+      "Visualiza de forma clara e simples a relação entre duas variáveis.",
+      "Pode indicar a força da correlação (pontos próximos a uma linha indicam forte correlação).",
+      "É a base para análises mais complexas, como a regressão linear."
+    ],
+    "desvantagens": [
+      "Uma correlação não implica necessariamente uma relação de causa e efeito.",
+      "Pode ser enganoso se houver outras variáveis (terceiros fatores) influenciando o resultado.",
+      "Não é útil para analisar a relação entre mais de duas variáveis simultaneamente."
+    ]
+  },
+  {
+    "nome": "5 Porquês (5 Whys)",
+    "descricao": "Técnica de análise de causa raiz que consiste em perguntar 'Por quê?' repetidamente (geralmente cinco vezes) para explorar as relações de causa e efeito subjacentes a um problema específico e chegar à sua causa fundamental.",
+    "aplicacao": "Resolver problemas, melhorar a qualidade e a eficiência de processos. É especialmente útil para problemas de complexidade baixa a moderada, onde não são necessárias técnicas estatísticas avançadas.",
+    "autor": "Sakichi Toyoda (fundador da Toyota Industries)",
+    "link_video": "https://www.youtube.com/watch?v=oVurUsl7k9w",
+    "vantagens": [
+      "Extremamente simples de usar e não requer treinamento complexo.",
+      "Ajuda a ir além dos sintomas e identificar a verdadeira causa raiz.",
+      "Incentiva o pensamento crítico e a resolução de problemas em equipe."
+    ],
+    "desvantagens": [
+      "Pode levar a conclusões subjetivas, pois diferentes pessoas podem dar respostas diferentes.",
+      "Não é eficaz para problemas complexos com múltiplas causas.",
+      "O sucesso depende da persistência e do conhecimento das pessoas que aplicam a técnica."
+    ]
+  },
+  {
+    "nome": "Ciclo PDCA (Plan-Do-Check-Act)",
+    "descricao": "Modelo iterativo de quatro passos (Planejar, Fazer, Checar, Agir) usado para o controle e melhoria contínua de processos e produtos. É um ciclo sem fim para a melhoria contínua.",
+    "aplicacao": "Implementar novas melhorias, gerenciar projetos, desenvolver novos produtos, ou resolver problemas de forma estruturada e contínua.",
+    "autor": "W. Edwards Deming (popularizador)",
+    "link_video": "https://www.youtube.com/watch?v=AZcLM6sd_oo",
+    "vantagens": [
+      "Promove a melhoria contínua de forma sistemática.",
+      "Estrutura a resolução de problemas e a implementação de mudanças.",
+      "É versátil e pode ser aplicado a qualquer tipo de processo."
+    ],
+    "desvantagens": [
+      "Pode ser lento para gerar resultados, pois é um processo passo a passo.",
+      "Requer disciplina e comprometimento da equipe para seguir o ciclo.",
+      "Não é ideal para resolver crises ou problemas urgentes."
+    ]
+  },
+  {
+    "nome": "Brainstorming (Tempestade de Ideias)",
+    "descricao": "Técnica de grupo na qual os participantes são encorajados a gerar um grande número de ideias sobre um tópico específico, sem críticas ou julgamentos iniciais.",
+    "aplicacao": "Gerar soluções criativas para problemas, encontrar causas para um defeito (usado com o Diagrama de Ishikawa), ou desenvolver novos conceitos de produtos e serviços.",
+    "autor": "Alex Faickney Osborn",
+    "link_video": "https://www.youtube.com/watch?v=8lWTQX_HwvA",
+    "vantagens": [
+      "Estimula a criatividade e a geração de um grande volume de ideias.",
+      "Promove a colaboração e o engajamento da equipe.",
+      "Ajuda a quebrar bloqueios criativos e a pensar 'fora da caixa'."
+    ],
+    "desvantagens": [
+      "Pode ser dominado por participantes mais extrovertidos.",
+      "Sem um bom facilitador, a sessão pode perder o foco.",
+      "A fase de filtragem e seleção das ideias pode ser demorada."
+    ]
+  },
+  {
+    "nome": "Matriz GUT (Gravidade, Urgência, Tendência)",
+    "descricao": "Ferramenta utilizada para priorizar a resolução de problemas com base em três critérios: Gravidade (o impacto do problema), Urgência (o tempo para agir) e Tendência (o potencial de piora do problema).",
+    "aplicacao": "Tomar decisões estratégicas, priorizar ações corretivas, gerenciar projetos e definir quais problemas devem ser atacados primeiro quando os recursos são limitados.",
+    "autor": "Charles H. Kepner e Benjamin B. Tregoe",
+    "link_video": "https://www.youtube.com/watch?v=AR030P3SnS0",
+    "vantagens": [
+      "Fornece um método claro e quantitativo para priorização.",
+      "Ajuda a focar nos problemas mais críticos para o negócio.",
+      "É relativamente simples de entender e aplicar."
+    ],
+    "desvantagens": [
+      "A pontuação pode ser subjetiva e variar entre os avaliadores.",
+      "Não ajuda a identificar a causa raiz dos problemas, apenas a priorizá-los.",
+      "Pode simplificar demais problemas complexos."
+    ]
+  },
+  {
+    "nome": "5S",
+    "descricao": "Metodologia de gestão com foco na organização do ambiente de trabalho, baseada em cinco palavras japonesas: Seiri (Senso de Utilização), Seiton (Senso de Organização), Seiso (Senso de Limpeza), Seiketsu (Senso de Padronização) e Shitsuke (Senso de Disciplina).",
+    "aplicacao": "Melhorar a eficiência, a segurança e a qualidade em qualquer ambiente de trabalho (fábricas, escritórios, hospitais) através da organização e padronização.",
+    "autor": "Desenvolvido no Japão (associado a práticas pós-guerra e à Toyota)",
+    "link_video": "https://www.youtube.com/watch?v=FgHXoMfYCbo",
+    "vantagens": [
+      "Reduz desperdícios de tempo e movimento.",
+      "Melhora a segurança e a moral da equipe.",
+      "Cria um ambiente de trabalho mais limpo, organizado e agradável."
+    ],
+    "desvantagens": [
+      "Requer uma mudança cultural e disciplina contínua para ser mantido.",
+      "Os resultados podem diminuir se o 'Shitsuke' (disciplina) não for forte.",
+      "Pode ser visto por alguns como uma tarefa de limpeza, e não uma ferramenta de gestão."
+    ]
+  },
+  {
+    "nome": "SIPOC (Supplier, Input, Process, Output, Customer)",
+    "descricao": "Ferramenta visual que resume as entradas e saídas de um ou mais processos em formato de tabela. Mapeia Fornecedores, Entradas, Processo, Saídas e Clientes.",
+    "aplicacao": "Definir o escopo de um projeto de melhoria, entender um processo de alto nível antes de detalhá-lo com um fluxograma, e garantir que todos os envolvidos tenham uma visão comum do processo.",
+    "autor": "Parte do programa de gerenciamento da qualidade Total Quality Management (TQM) e Six Sigma.",
+    "link_video": "https://www.youtube.com/watch?v=gnWdxPXMrKc",
+    "vantagens": [
+      "Fornece uma visão geral e clara de um processo complexo.",
+      "Ajuda a identificar todos os elementos e partes interessadas de um processo.",
+      "É útil para alinhar a equipe no início de um projeto."
+    ],
+    "desvantagens": [
+      "É um mapa de alto nível e não mostra detalhes do processo.",
+      "Pode se tornar obsoleto se não for atualizado com as mudanças do processo.",
+      "Não identifica problemas ou gargalos, apenas descreve o fluxo."
+    ]
+  }
+  
+]
